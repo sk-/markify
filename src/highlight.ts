@@ -96,22 +96,10 @@ export default class highlight {
   static highlightCode(source: string, lang: string): string {
     hljs.configure({classPrefix: ''});
     if (lang && lang !== 'auto') {
-      // When trying to highlight the language, hljs will print to the console
-      // in case of errors, but given that we are catching the exception,
-      // there's no need of reporting that.
-      // This changed between versions of hljs.
-      // Note: that we do it in this way, as detecting the language is
-      // expensive.
-      const oldConsoleError = console.error;
       try {
-        console.error = () => {
-          // Do nothing
-        };
         return hljs.highlight(lang, source).value;
       } catch (e) {
         // Do nothing as we will highlight it using the 'auto' option.
-      } finally {
-        console.error = oldConsoleError;
       }
     }
     return hljs.highlightAuto(source).value;
