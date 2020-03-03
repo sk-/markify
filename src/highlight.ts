@@ -4,10 +4,6 @@ import * as hljs from './vendor/highlight';
 export default class highlight {
   // You can only append to this list, or otherwise an already highlighted
   // block may be re-rendered with the wrong language.
-  // Note: for some reason kotlin, ruby, scala and yaml fail with the error:
-  // "We're sorry, a server error occurred. Please wait a bit and try again."
-  // Some people say it's due to unsupported regexes. See
-  // https://stackoverflow.com/questions/18804649/google-apps-script-were-sorry-a-server-error-occurred-please-wait-a-bit-and
   static LANGUAGES = [
     'bash',
     'coffeescript',

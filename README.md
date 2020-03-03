@@ -1,18 +1,20 @@
 # Markify
 
+[![Get from G Suite Marketplace][gsuite-image]][gsuite-url]
+[![Circle CI][circle-image]][circle-url]
+[![TypeScript Style Guide][gts-image]][gts-url]
+
 An easier way to write Google Docs by using Markdown. This is specially useful when writing technical documents for software engineering.
 
 # Installation
 
-Go to the [GSuite Marketplace listing][gsuite-app] and follow the instructions.
+Go to the [GSuite Marketplace listing][gsuite-url] and follow the instructions.
 
 # Features
 
-[![TypeScript Style Guide][gts-image]][gts-url]
-
 Headings (only with `#`), rulers, bold, italics, strike-trough, quotes, inline code and code highlighting.
 
-We support all the major languages via Highlight.js. See the full list [here][language-list].
+We support all the major languages via [Highlight.js][highlightjs-url]. See the full list [here][language-list].
 
 # Example
 
@@ -77,7 +79,11 @@ class SomeClass:
 
 ES6 modules cannot be used yet with Google Apps Scripts, not even with the new V8 runtime, so the code looks a little funky.
 
-[gsuite-app]: https://google.com
-[language-list]: https://github.com/sk-/markify/blob/master/src/highlight.ts#L13
+[language-list]: https://github.com/sk-/markify/blob/master/src/highlight.ts#L7-L48
+[circle-image]: https://circleci.com/gh/sk-/markify.svg?style=shield
+[circle-url]: https://circleci.com/gh/sk-/markify
 [gts-image]: https://img.shields.io/badge/code%20style-google-blueviolet.svg
 [gts-url]: https://github.com/google/gts
+[gsuite-image]: https://img.shields.io/badge/markify-G%20Suite-red
+[gsuite-url]: https://google.com
+[highlightjs-url]: https://highlightjs.org/
