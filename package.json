@@ -1,0 +1,26 @@
+{
+  "name": "markify",
+  "version": "0.1.0",
+  "description": "Google Docs Add-On to render Markdown",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "check": "npx prettier --check \"**/*.{md,json,yml}\" && npx gts check",
+    "clean": "gts clean",
+    "compile": "tsc --incremental -p .",
+    "fix": "npx prettier --write \"**/*.{md,json,yml}\" && npx gts fix"
+  },
+  "author": "Sebastian Kreft",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/google-apps-script": "0.0.28",
+    "@types/jest": "^25.1.3",
+    "@types/node": "^10.17.17",
+    "@google/clasp": "^2.3.0",
+    "gts": "^2.0.0-alpha.4",
+    "jest": "^25.1.0",
+    "ts-jest": "^25.2.1",
+    "typescript": "~3.7.0"
+  }
+}

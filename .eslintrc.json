@@ -1,0 +1,12 @@
+{
+  "extends": "./node_modules/gts/",
+  "ignorePatterns": ["src/vendor/**/*", "build/**/*"],
+  "globals": {
+    "DocumentApp": "readonly",
+    "XmlService": "readonly",
+    "hljs": "readonly"
+  },
+  "env": {
+    "jest": true
+  }
+}
