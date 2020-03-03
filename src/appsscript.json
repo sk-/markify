@@ -2,5 +2,6 @@
   "timeZone": "America/New_York",
   "dependencies": {},
   "exceptionLogging": "STACKDRIVER",
-  "oauthScopes": ["https://www.googleapis.com/auth/documents.currentonly"]
+  "oauthScopes": ["https://www.googleapis.com/auth/documents.currentonly"],
+  "runtimeVersion": "V8"
 }

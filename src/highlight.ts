@@ -90,7 +90,6 @@ export default class highlight {
     if (langId >= this.LANGUAGES.length) {
       return 'auto';
     }
-    console.info(encodedLang, langId);
     return this.LANGUAGES[langId];
   }
 

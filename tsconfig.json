@@ -3,7 +3,7 @@
   "compilerOptions": {
     "rootDir": ".",
     "outDir": "build",
-    "target": "es3",
+    "target": "ES2019",
     "pretty": true
   },
   "include": ["src/**/*.ts", "test/**/*.ts"]
