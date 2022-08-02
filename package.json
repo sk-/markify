@@ -20,7 +20,7 @@
     "@google/clasp": "^2.3.0",
     "gts": "^2.0.0-alpha.4",
     "jest": "^25.1.0",
-    "ts-jest": "^25.2.1",
+    "ts-jest": "^25.5.1",
     "typescript": "~3.7.0"
   }
 }
